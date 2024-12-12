@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -4px rgb(134, 128, 128);
+    ;
+    /* X offset Y offset  blur-redius spred-redius color */
+}
+
+.todo-app h2 {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #002765;
+}
+
+.todo-app h2 img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.todo-app .lister {
+    display: flex;
+    background: #d7d5da;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    /* border: 1px solid red; */
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 0px 5px 10px;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: orange;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px;
+    color: #555;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family: sans-serif;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-image: url(./images/unchaked.png);
+    height: 16px;
+    width: 16px;
+    background-size: cover;
+    background-position: center;
+    top: 14px;
+    left: 24px;
+}
+
+ul li.cheke {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.cheke::before {
+    background-image: url(./images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 3px;
+    top: 9px;
+    font-size: 20px;
+    color: #555;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+ul li span:hover {
+    background: #d7d5da;
+    border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+    .container{
+        align-items: center;
+        display: flex;
+    }
+
+    .todo-app {
+        margin: 50px auto;
+    }
+
+    .todo-app h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 6px 15px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+}
