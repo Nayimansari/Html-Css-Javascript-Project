@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wather App</title>
+    <link rel="shortcut icon" href="./assets/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search-box">
+                <input type="text" placeholder="enter city name" spellcheck="false" autofocus>
+                <button onclick="callAction()"><img src="./assets/search.png" alt="search-icon"></button>
+            </div>
+            <div class="weather">
+                <img src="" class="weather-icon" alt="weather-image">
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+                <div class="details">
+                    <div class="data">
+                        <img src="./assets/humidity.png" alt="humidity-img">
+                        <div>
+                            <p class="humidity"></p>
+                            <p>humidity</p>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <img src="./assets/wind.png" alt="wind-img">
+                        <div>
+                            <p class="wind"></p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./app.js"></script>
+
+</html>
+
+<!-- https://api.openweathermap.org/data/2.5/weather?q=berlin&appid=&units=metric -->
+
+<!-- https://www.flaticon.com/search?word=clouds
+https://www.blackbox.ai/chat/hkpW9a6 -->
