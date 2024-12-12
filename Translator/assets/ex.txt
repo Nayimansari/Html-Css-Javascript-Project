@@ -1,0 +1,12 @@
+copy
+<i class="fa-regular fa-copy"></i>
+
+
+speaker
+<i class="fa-solid fa-volume-high"></i>
+
+
+
+prompt 
+
+genrate countery name and countery code in json object formate like "am-ET": "Amharic"
